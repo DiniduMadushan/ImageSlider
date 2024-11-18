@@ -11,15 +11,18 @@
 <div class="gallery-wrap">
     <img src="assets/back.png" id="backBtn">
     <div class="gallery">
+        
         <div>
             <span> <img src="assets/html.png"> </span>
             <span> <img src="assets/js.png"> </span>
-            <span> <img src="assets/node.png"> </span>
         </div>
         <div>
             
             <span> <img src="assets/node.png"> </span>
             <span> <img src="assets/react.png"> </span>
+        </div>
+        <div>
+            <span> <img src="assets/python.png"> </span>
             <span> <img src="assets/python.png"> </span>
         </div>
     </div>
@@ -34,6 +37,7 @@
     scrollContainer.addEventListener("wheel", (evt)=>{
         evt.preventDefault();
         scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
     });
 
     nextBtn.addEventListener("click",()=>{
